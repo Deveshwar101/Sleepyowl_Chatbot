@@ -1,0 +1,14 @@
+{
+  "name": "sleep-well-website",
+  "version": "1.0.0",
+  "description": "A website about sleep issues and healthy sleep habits.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "author": "Deveshwar Dev Manral",
+  "license": "ISC"
+}
