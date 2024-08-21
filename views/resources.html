@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources and FAQs</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+        }
+        header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #00FFFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            padding-bottom: 60px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul li a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .faq-question {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/images/sleepybot.png" alt="SleepyBot Logo">
+        <h1>Resources and FAQs</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/habits">Healthy Habits</a></li>
+                <li><a href="/nutrition">Nutrition and Sleep</a></li>
+                <li><a href="/disorders">Sleep Disorders</a></li>
+                <li><a href="/resources">Resources</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="resources">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="https://www.sleepfoundation.org/" target="_blank">National Sleep Foundation (NSF)</a></li>
+                <li><a href="https://my.clevelandclinic.org/health/diseases/11429-sleep-disorders" target="_blank">Cleveland Clinic - Sleep Disorders</a></li>
+                <li><a href="https://www.cdc.gov/sleep/index.html" target="_blank">CDC - Sleep and Sleep Disorders</a></li>
+                <li><a href="https://aasm.org/" target="_blank">American Academy of Sleep Medicine (AASM)</a></li>
+            </ul>
+        </section>
+        
+        <section id="faqs">
+            <h2>FAQs</h2>
+            <ul>
+                <li>
+                    <p class="faq-question">What is insomnia?</p>
+                    <p class="faq-answer">Insomnia is a sleep disorder characterized by difficulty falling asleep, staying asleep, or both, despite having the opportunity to sleep. It can be caused by stress, anxiety, depression, or certain medications.</p>
+                </li>
+                <li>
+                    <p class="faq-question">How much sleep do I need?</p>
+                    <p class="faq-answer">
+                        The recommended amount of sleep varies by age:<br>
+                        - Adults: 7-9 hours per night<br>
+                        - Teenagers: 8-10 hours per night<br>
+                        - Children (6-12 years): 9-12 hours per night
+                    </p>
+                </li>
+                <li>
+                    <p class="faq-question">What are the symptoms of sleep apnea?</p>
+                    <p class="faq-answer">Symptoms of sleep apnea include loud snoring, gasping for air during sleep, daytime sleepiness, and morning headaches. It can significantly impact overall health if left untreated.</p>
+                </li>
+                <li>
+                    <p class="faq-question">How can I improve my sleep hygiene?</p>
+                    <p class="faq-answer">Improving sleep hygiene involves adopting habits that promote good sleep, such as maintaining a regular sleep schedule, creating a comfortable sleep environment, and avoiding caffeine and screens before bedtime.</p>
+                </li>
+                <li>
+                    <p class="faq-question">What treatments are available for narcolepsy?</p>
+                    <p class="faq-answer">Treatments for narcolepsy may include medications to improve alertness and scheduled naps throughout the day. Lifestyle adjustments and maintaining a consistent sleep schedule are also important.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "609074a9-e893-4923-b3a2-a0cdbae75f2c", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "26b1737e-377f-4e3b-a54a-5a172d7feec4", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    <footer>
+        <p>Contact us at info@sleepwell.com | Follow us on social media</p>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                if (answer.style.display === 'none' || !answer.style.display) {
+                    answer.style.display = 'block';
+                } else {
+                    answer.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

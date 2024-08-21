@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Issues Overview</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+        }
+        header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #00FFFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: #e0ffff;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            padding-bottom: 60px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .cta {
+            background: #00FFFF;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .cta:hover {
+            background: #007575;
+        }
+        .featured {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .featured article {
+            flex: 1;
+            margin: 0 10px;
+            background: #e0ffff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .featured article h3 {
+            color: #007575;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: -100%;
+            width: 100%;
+            transition: bottom 0.5s;
+        }
+        footer.visible {
+            bottom: 0;
+        }
+        section img {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 500px;
+            border-radius: 5px;
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/images/sleepybot.png" alt="SleepyBot Logo">
+        <h1>Sleep Well</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/habits">Healthy Habits</a></li>
+                <li><a href="/nutrition">Nutrition and Sleep</a></li>
+                <li><a href="/disorders">Sleep Disorders</a></li>
+                <li><a href="/resources">Resources</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+
+                <h2>Welcome to Sleep Well</h2>
+                <p>Explore tips and resources to improve your sleep quality.</p>
+                <a href="/habits" class="cta">Learn More</a>
+
+        </section>
+        <section class="featured">
+            <article>
+                <h3>Healthy Sleep Habits</h3>
+                <p>Discover the best practices for a good night's sleep.</p>
+                <a href="/habits" class="cta">Read More</a>
+            </article>
+            <article>
+                <h3>Nutrition and Sleep</h3>
+                <p>Find out how your diet impacts your sleep quality.</p>
+                <a href="/nutrition" class="cta">Read More</a>
+            </article>
+            <article>
+                <h3>Understanding Sleep Disorders</h3>
+                <p>Learn about different types of sleep disorders and their effects.</p>
+                <a href="/disorders" class="cta">Read More</a>
+            </article>
+        </section>
+        <section>
+            <div class="container">
+                <h2>Understanding Sleep Issues</h2>
+                <p>Sleep disorders affect sleep quality, timing, or duration, impacting daytime function. They can lead to serious health problems and are often linked to underlying medical or mental health issues.</p>
+                <h3>Historical Perspective</h3>
+                <p>The first classification of sleep disorders by the American Sleep Disorders Association in 1979 has evolved significantly, with over 100 specific sleep disorders now identified.</p>
+                <h3>Classification and Methodologies</h3>
+                <p>Modern classifications use various criteria, including:</p>
+                <ul>
+                    <li><strong>Causes:</strong> Physiological, psychological, or environmental origins.</li>
+                    <li><strong>Symptoms:</strong> Insomnia, excessive daytime sleepiness, or irregular patterns.</li>
+                    <li><strong>Physiological Effects:</strong> Impact on cardiovascular, endocrine, and immune systems.</li>
+                    <li><strong>Psychological Effects:</strong> Effects on mood, anxiety, and cognitive function.</li>
+                </ul>
+                <section class="featured"><img src="/images/pata.jpeg" alt="Sleep Disorders" height="336" width="500"></section>
+                <h3>Common Sleep Disorders</h3>
+                <ul>
+                    <li><strong>Insomnia:</strong> Difficulty falling or staying asleep.</li>
+                    <li><strong>Sleep Apnea:</strong> Breathing interruptions during sleep.</li>
+                    <li><strong>Narcolepsy:</strong> Excessive daytime sleepiness and sudden sleep attacks.</li>
+                    <li><strong>Restless Legs Syndrome:</strong> Uncomfortable sensations in the legs.</li>
+                    <li><strong>Circadian Rhythm Disorders:</strong> Misalignment between internal clock and environment.</li>
+                </ul>
+                
+                <h3>Importance of Addressing Sleep Issues</h3>
+                <p>Addressing sleep disorders is vital for health, preventing issues like heart disease, diabetes, and mental health disorders. They significantly impair daily functioning and quality of life.</p>
+                <h3>Seeking Help</h3>
+                <p>If you suspect a sleep disorder, seek professional help. Our website offers resources and information to guide you towards better sleep.</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "609074a9-e893-4923-b3a2-a0cdbae75f2c", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "26b1737e-377f-4e3b-a54a-5a172d7feec4", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    <footer id="footer">
+        <p>Contact us at info@sleepwell.com | Follow us on social media</p>
+    </footer>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            const footer = document.getElementById('footer');
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                footer.classList.add('visible');
+            } else {
+                footer.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>
